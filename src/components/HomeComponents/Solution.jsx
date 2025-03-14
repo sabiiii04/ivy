@@ -18,19 +18,17 @@ const Solution = () => {
     return (
         <section className="mx-auto max-w-[1350px] px-6 md:px-20 py-10 md:py-20 flex flex-col-reverse lg:flex-row items-center gap-10 md:gap-16">
             <img src={SolutionPhoto} alt="Solution" className="w-full md:w-[50%]" />
-            <div className="w-full md:w-[50%] text-center md:text-left">
+            <div className="w-full lg:w-[50%] text-center md:text-left">
                 <p className="text-[20px] md:text-[23px] tracking-[2px] md:tracking-[4px]">Easy business solution</p>
-                <h2 className="flex flex-col text-nowrap text-[40px] md:text-[60px] font-bold leading-tight">
+                <h2 className="flex flex-col text-wrap xs:text-nowrap text-[40px] md:text-[60px] font-bold leading-tight">
                     <span>The most leading</span>
                     <span className="font-semibold text-[32px] md:text-[57px]">Solution for you</span>
                 </h2>
                 <div className="flex flex-col md:flex-row gap-6 my-6">
-                    <div>
                         <div className="w-[5px] h-[15px] bg-[#25758A] rounded-[25px] mb-2 mx-auto md:mx-0" />
                         <p className="text-[17px] md:text-[19px]">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
                         </p>
-                    </div>
                 </div>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6 text-center md:text-left">
                     {pros.map((pro, index) => (
