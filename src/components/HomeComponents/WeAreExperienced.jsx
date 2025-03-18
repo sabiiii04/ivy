@@ -49,7 +49,7 @@ const ExperiencedBusiness = () => {
                         ))}
                     </div>
                     <div className="w-full lg:w-1/2 relative flex justify-center items-center">
-                        <img src={experience} alt="Team" className="w-[450px] h-[450px]" />
+                        <img src={experience} alt="Team" className="w-[450px] h-[450px] object-cover" />
                     </div>
                 </div>
             </div>
