@@ -7,7 +7,6 @@ import { FaEye } from "react-icons/fa";
 const businessCases = [
     {
         img: woman,
-
     },
     {
         img: team,
