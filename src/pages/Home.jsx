@@ -8,6 +8,7 @@ import OurBusinsessCases from "../components/HomeComponents/OurBusinsessCases.js
 import WeAreExperienced from "../components/HomeComponents/WeAreExperienced.jsx";
 import TeamSection from "../components/HomeComponents/TeamSection.jsx";
 import LetsWorkTogether from "../components/HomeComponents/LetsWorkTogether.jsx";
+import LogoSection from "../components/HomeComponents/LogoSection.jsx";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <OurBusinsessCases/>
             <WeAreExperienced/>
             <TeamSection/>
+            <LogoSection/>
             <LetsWorkTogether/>
         </main>
     );

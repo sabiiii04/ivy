@@ -38,7 +38,7 @@ const ExperiencedBusiness = () => {
                                     <p className="text-lg font-semibold">
                                         <span className="text-[#25758A] text-[25px] mr-2">{index + 1}.</span> {faq.question}
                                     </p>
-                                    <FaChevronDown className={`text-[#25758A] ${selectedFaqIndex === index ? "rotate-180" : "rotate-0"}`} />
+                                    <FaChevronDown className={`text-[#25758A]`} />
                                 </div>
                                 {selectedFaqIndex === index && (
                                     <p className="px-5 pt-5">

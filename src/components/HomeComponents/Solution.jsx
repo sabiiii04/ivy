@@ -25,10 +25,12 @@ const Solution = () => {
                     <span className="font-semibold text-[32px] md:text-[57px]">Solution for you</span>
                 </h2>
                 <div className="flex flex-col md:flex-row gap-6 my-6">
-                        <div className="w-[5px] h-[15px]  bg-[#25758A] rounded-[25px] mb-2 mx-auto md:mx-0" />
+                    <div className="flex flex-row gap-4">
+                        <div className="w-[20px] bg-[#25758A] rounded-[25px] mb-2 mx-auto md:mx-0" />
                         <p className="text-[17px] md:text-[19px]">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
                         </p>
+                    </div>
                 </div>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6 text-center md:text-left">
                     {pros.map((pro, index) => (
