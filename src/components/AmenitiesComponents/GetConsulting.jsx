@@ -5,7 +5,7 @@ const GetConsultingSection = () => {
     return (
         <section className="max-w-[1200px] mx-auto px-6 lg:px-20 py-16 flex flex-col md:flex-row items-center gap-10">
             <div className="w-full md:w-1/2">
-                <img src={GetConsulting} alt="Consulting" className="rounded-lg shadow-lg w-full h-auto"/>
+                <img src={GetConsulting} alt="Consulting" className="w-full h-auto"/>
             </div>
 
             <div className="w-full md:w-1/2">
@@ -18,12 +18,18 @@ const GetConsultingSection = () => {
                     Dapibus Curae Risus Rutrum Curabitur Nunc Sociis Nullam Nisi, Aliquet Quis Iaculis Scelerisque
                     Primis Massa Imperdiet, Dis Senectus Blandit Aptent Nulla Cubilia Sodales Convallis Tortor Pellentesque Nulla.
                 </p>
-                <div className="mt-6 space-y-4">
+                <div className="mt-6 space-y-4 bg-gray-100 p-6 rounded-[15px]">
                     <div>
-                        <p className="text-700 font-medium mb-1">Business Strategy <span className="float-right">70%</span></p>
+                        <p className="text-700 font-medium mb-1">Business Strategy <span className="float-right text-[#25758A]">70%</span></p>
+                        <div className="bg-gray-200 h-2 rounded-full">
+                            <div className="bg-[#25758A] h-2 rounded-full w-[70%]"></div>
+                        </div>
                     </div>
                     <div>
-                        <p className="text-700 font-medium mb-1">Company Strength <span className="float-right">93%</span></p>
+                        <p className="text-700 font-medium mb-1">Company Strength <span className="float-right text-[#25758A]">93%</span></p>
+                        <div className="bg-gray-200 h-2 rounded-full">
+                            <div className="bg-[#25758A] h-2 rounded-full w-[90%]"></div>
+                        </div>
                     </div>
                 </div>
                 <button className="mt-6 bg-[#25758A] text-white px-6 py-3 font-semibold rounded-md shadow-md hover:bg-[#1d5f74] transition">

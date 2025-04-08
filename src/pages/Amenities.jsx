@@ -13,8 +13,8 @@ const Amenities = () => {
             <HeroSection/>
             <GetConsulting/>
             <WePride/>
-            <Feedbacks/>
             <BusinessConsultancy/>
+            <Feedbacks/>
             <OurTeam/>
             <NewsletterSignup/>
         </div>

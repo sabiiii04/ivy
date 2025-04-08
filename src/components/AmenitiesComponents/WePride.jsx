@@ -9,7 +9,9 @@ const CustomerBenefits = () => {
                 <img src={Pride} alt="Business Meeting" className="rounded-lg shadow-lg w-full h-auto"/>
             </div>
             <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-4">Customer Benefits</h2>
+                <p className="text-[20px] md:text-[23px] tracking-[2px] md:tracking-[4px] text-[#25758A]">Our Awesome Features</p>
+                <h2 className="text-3xl font-bold mb-4 font-bold leading-tight uppercase tracking-wider mt-2">We pride ourselves on our </h2>
+                <h2 className="text-3xl mb-4 uppercase tracking-wider">Consultant feature</h2>
                 <p className="text-600 mb-4">
                     Dapibus curae risus rutrum curabitur nunc sociis nullam nisl, aliquet quis iaculis scelerisque primis massa imperdiet, dis senectus blandit aptent nulla cubilia sodales convallis tortor pellentesque nulla.
                 </p>
