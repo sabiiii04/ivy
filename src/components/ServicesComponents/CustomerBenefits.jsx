@@ -4,7 +4,7 @@ import Men from "../../assets/Men.png";
 
 const CustomerBenefits = () => {
     return (
-        <section className="max-w-[1200px] mx-auto px-6 lg:px-20 py-16 flex flex-col md:flex-row items-center gap-10">
+        <section className="max-w-[1200px] mx-auto px-6 lg:px-20 py-16 flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="w-full md:w-1/2">
                 <img src={Men} alt="Business Meeting" className="rounded-lg shadow-lg w-full h-auto"/>
             </div>

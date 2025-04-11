@@ -13,7 +13,7 @@ const services = [
 
 const ServicesSection = () => {
     return (
-        <section className="max-w-[1350px] mx-auto flex flex-col md:flex-row items-center gap-10 px-6 lg:px-20 py-16">
+        <section className="max-w-[1350px] mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 px-6 lg:px-20 py-16">
             <div className="w-full md:w-2/3">
                 <img src={team} alt="Business Meeting" className="w-full rounded-lg" />
             </div>
