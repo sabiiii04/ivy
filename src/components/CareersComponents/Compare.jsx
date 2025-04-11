@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FaHome } from 'react-icons/fa';
 import { FaCar } from 'react-icons/fa';
 import { FaHeartbeat } from 'react-icons/fa';
@@ -9,19 +9,19 @@ import { FaDog } from 'react-icons/fa';
 import { FaWater } from 'react-icons/fa';
 import { FaUserFriends } from 'react-icons/fa';
 
-const insuranceOptions = [
-    { label: 'Home', icon: <FaHome className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Vehicles', icon: <FaCar className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Life', icon: <FaHeartbeat className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Business', icon: <FaBriefcase className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Health', icon: <FaUserFriends className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Travel', icon: <FaPlane className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Retire', icon: <FaUserShield className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Pet', icon: <FaDog className="text-[#25758A] text-2xl mb-2" /> },
-    { label: 'Marine', icon: <FaWater className="text-[#25758A] text-2xl mb-2" /> }
-];
-
 const CompareSection = () => {
+    const [insuranceOptions, setInsuranceOptions] = useState([
+        { label: 'Home', icon: <FaHome className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Vehicles', icon: <FaCar className="text-[#25758A] text-2xl mb-2" /> , isSelected: false },
+        { label: 'Life', icon: <FaHeartbeat className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Business', icon: <FaBriefcase className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Health', icon: <FaUserFriends className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Travel', icon: <FaPlane className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Retire', icon: <FaUserShield className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Pet', icon: <FaDog className="text-[#25758A] text-2xl mb-2" />, isSelected: false },
+        { label: 'Marine', icon: <FaWater className="text-[#25758A] text-2xl mb-2" />, isSelected: false }
+
+    ])
     return (
         <section className="py-10 px-6 max-w-[1200px] mx-auto">
             <div className="text-center mb-10">
@@ -41,7 +41,17 @@ const CompareSection = () => {
                         <button
                             key={index}
                             type="button"
-                            className="bg-white rounded-md shadow p-4 flex flex-col items-center hover:bg-gray-200 transition"
+                            onClick={() => {
+                                setInsuranceOptions(insuranceOptions.map((option, index2) => {
+                                    if (index2 === index) {
+                                        option.isSelected = !option.isSelected;
+                                        return option;
+                                    } else {
+                                        return option;
+                                    }
+                                }));
+                            }}
+                            className={`${option.isSelected ? "bg-blue-400" : "bg-white"} rounded-md shadow p-4 flex flex-col items-center hover:bg-gray-200 transition`}
                         >
                             {option.icon}
                             <span className="text-sm font-medium">{option.label}</span>

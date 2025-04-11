@@ -6,7 +6,7 @@ import Consultancy from "../components/HomeComponents/BuisnessConsultancy.jsx";
 import WeAreHelp from "../components/HomeComponents/WeAreHelp.jsx";
 import OurBusinsessCases from "../components/HomeComponents/OurBusinsessCases.jsx";
 import WeAreExperienced from "../components/HomeComponents/WeAreExperienced.jsx";
-import TeamSection from "../components/HomeComponents/TeamSection.jsx";
+import TeamSection from "../components/TeamSection.jsx";
 import LetsWorkTogether from "../components/HomeComponents/LetsWorkTogether.jsx";
 import LogoSection from "../components/HomeComponents/LogoSection.jsx";
 
